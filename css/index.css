@@ -136,6 +136,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  font-family: 'ZCOOL XiaoWei', serif;
 }
 * {
   box-sizing: border-box;
@@ -167,9 +168,24 @@ header nav a {
   color: #302743;
   font-size: 1.8rem;
 }
+@media (max-width: 800px) {
+  header nav {
+    padding: 1rem 8rem;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    padding: 1rem;
+  }
+}
 header .headerBox {
   padding: 2rem 3%;
   border-bottom: 1px solid #FFA71A;
+}
+@media (max-width: 500px) {
+  header .headerBox {
+    text-align: center;
+  }
 }
 header .headerBox .headerImg {
   display: flex;
@@ -178,9 +194,19 @@ header .headerBox .headerImg {
 header .headerBox .headerImg img {
   width: 30%;
 }
+@media (max-width: 500px) {
+  header .headerBox .headerImg img {
+    width: 50%;
+  }
+}
 header .headerBox h1 {
   color: #FFA71A;
   font-size: 4rem;
+}
+@media (max-width: 500px) {
+  header .headerBox h1 {
+    text-align: center;
+  }
 }
 header .headerBox h3 {
   color: #F7F6F3;
@@ -188,11 +214,21 @@ header .headerBox h3 {
   padding: 1rem 0 2rem 0;
   border-bottom: 1px solid #FFA71A;
 }
+@media (max-width: 500px) {
+  header .headerBox h3 {
+    text-align: center;
+  }
+}
 header .headerBox p {
   padding: 2rem 0 2rem 0;
 }
 header .headerBox button {
   width: 20%;
+}
+@media (max-width: 500px) {
+  header .headerBox button {
+    width: 50%;
+  }
 }
 header .headerBox button a {
   display: block;
@@ -215,8 +251,22 @@ header .headerBox button a:hover {
   color: #627E98;
   padding: 2rem 0 2rem 2%;
 }
+@media (max-width: 500px) {
+  .middleContent {
+    flex-wrap: wrap;
+  }
+}
 .middleContent .aboutMe {
-  width: 55%;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .middleContent .aboutMe {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 .middleContent .aboutMe h2 {
   color: #FFA71A;
@@ -224,7 +274,16 @@ header .headerBox button a:hover {
   padding: 1rem 0;
 }
 .middleContent .attributeList {
-  width: 40%;
+  width: 46%;
+}
+@media (max-width: 500px) {
+  .middleContent .attributeList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 .middleContent .attributeList h2 {
   color: #FFA71A;
@@ -234,6 +293,11 @@ header .headerBox button a:hover {
   border: 1px solid #FFA71A;
   margin-right: 2px;
   padding: 1rem;
+}
+@media (max-width: 500px) {
+  .middleContent .attributeList p {
+    width: 98%;
+  }
 }
 .workHistory {
   padding: 1rem 0 2rem 0;
@@ -263,6 +327,14 @@ header .headerBox button a:hover {
 footer {
   padding-top: 3.5rem;
   background: #302743;
-  color: #A14152;
+  color: #FFA71A;
   text-align: center;
+}
+footer h2 {
+  padding: 1rem 0;
+  font-size: 2.6rem;
+}
+footer h6 {
+  padding: 3rem 0 1rem 0;
+  color: #A14152;
 }

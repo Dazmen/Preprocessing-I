@@ -77,10 +77,18 @@ html, body {
 	display:flex;
 	justify-content: center;
 }
+.mediaCen(){
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
 
 //STYLING STARTS HERE
+
 html{
 	font-size: 62.5%;
+	font-family: 'ZCOOL XiaoWei', serif;
 }
 *{
 	box-sizing: border-box;
@@ -111,32 +119,52 @@ header{
 			color:@pColor5;
 			font-size: 1.8rem;
 		}//end of nav a
+		@media (max-width: 800px){
+			padding:1rem 8rem;
+		}
+		@media (max-width: 500px){
+			padding:1rem;
+		}
 	}//end of nav
 	.headerBox{
 		padding:2rem 3%;
 		border-bottom:@sBorder;
+		@media (max-width: 500px){
+			text-align: center;
+		}
 		.headerImg{
-			display:flex;
-			justify-content: center;
+			.sFlexCen();
 			img{
 				width:30%;
+				@media (max-width: 500px){
+					width:50%;
+				}
 			}//end of img
 		}//end of headerImg
 		h1{
 			color:@day9;
 			font-size: 4rem;
-		}//end of h2
+			@media (max-width: 500px){
+				text-align: center;
+			}
+		}//end of h1
 		h3{
 			color:@pColor1;
 			font-size:2.5rem;
 			padding:1rem 0 2rem 0;
 			border-bottom: 1px solid @day9;
+			@media (max-width: 500px){
+				text-align: center;
+			}
 		}//end of h3
 		p{
 			padding:2rem 0 2rem 0;
 		}//end of p
 		button{
 			width:20%;
+			@media (max-width: 500px){
+				width:50%;
+			}
 			a{
 				display:block;
 				padding:1rem 0;
@@ -155,12 +183,20 @@ header{
 	}//END of headerBox
 }//end of header
 .middleContent{
+	@media (max-width: 500px){
+		flex-wrap: wrap;
+	}
 	.sFlexB();
 	background: @pColor5;
 	color:@pColor2;
 	padding: 2rem 0 2rem 2%;
+	
 	.aboutMe{
-		width:55%;
+		width:50%;
+		@media (max-width: 500px){
+			width:90%;
+			.mediaCen();
+			}
 		h2{
 			color:@day9;
 			font-size:2.6rem;
@@ -168,7 +204,11 @@ header{
 		}//end of h2
 	}//end of .aboutMe
 	.attributeList{
-		width:40%;
+		width:46%;
+		@media (max-width: 500px){
+			width:100%;
+			.mediaCen();
+		}
 		h2{
 			color:@day9;
 			font-size:2.6rem;
@@ -177,6 +217,9 @@ header{
 			border:@sBorder;
 			margin-right: 2px;
 			padding:1rem;
+			@media (max-width: 500px){
+				width:98%;
+			}
 		}//end of p
 	}//end of attributeList
 }//end of .middleContent
@@ -210,6 +253,14 @@ header{
 footer{
 	padding-top:3.5rem;
 	background: @pColor5;
-	color:@pColor4;
+	color:@day9;
 	text-align:center;
+	h2{
+		padding:1rem 0;
+		font-size:2.6rem;
+	}
+	h6{
+		padding: 3rem 0 1rem 0;
+		color:@pColor4;
+	}
 }
