@@ -1,1 +1,340 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  border: 1px solid red;
+}
+body {
+  background: #A14152;
+  color: #627E98;
+  font-size: 62.5%;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background: #302743;
+  font-size: 1.6rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  padding: 1rem 5% 1rem 50%;
+  background: #FFA71A;
+}
+header nav a {
+  text-decoration: none;
+  color: #302743;
+  font-size: 1.8rem;
+}
+@media (max-width: 800px) {
+  header nav {
+    padding: 1rem 8rem;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    padding: 1rem;
+  }
+}
+header .headerBox {
+  padding: 2rem 3%;
+  border-bottom: 1px solid #FFA71A;
+}
+@media (max-width: 500px) {
+  header .headerBox {
+    text-align: center;
+  }
+}
+header .headerBox .headerImg {
+  display: flex;
+  justify-content: center;
+}
+header .headerBox .headerImg img {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  header .headerBox .headerImg img {
+    width: 50%;
+  }
+}
+header .headerBox h1 {
+  color: #FFA71A;
+  font-size: 4rem;
+}
+@media (max-width: 500px) {
+  header .headerBox h1 {
+    text-align: center;
+  }
+}
+header .headerBox h3 {
+  color: #F7F6F3;
+  font-size: 2.5rem;
+  padding: 1rem 0 2rem 0;
+  border-bottom: 1px solid #FFA71A;
+}
+@media (max-width: 500px) {
+  header .headerBox h3 {
+    text-align: center;
+  }
+}
+header .headerBox p {
+  padding: 2rem 0 2rem 0;
+}
+header .headerBox button {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  header .headerBox button {
+    width: 50%;
+  }
+}
+header .headerBox button a {
+  display: block;
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #302743;
+  background: #F7F6F3;
+  border: 1px solid #FFA71A;
+}
+header .headerBox button a:hover {
+  background: #A14152;
+  color: #FFA71A;
+}
+.middleContent {
+  display: flex;
+  justify-content: space-between;
+  background: #302743;
+  color: #627E98;
+  padding: 2rem 0 2rem 2%;
+}
+@media (max-width: 500px) {
+  .middleContent {
+    flex-wrap: wrap;
+  }
+}
+.middleContent .aboutMe {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .middleContent .aboutMe {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.middleContent .aboutMe h2 {
+  color: #FFA71A;
+  font-size: 2.6rem;
+  padding: 1rem 0;
+}
+.middleContent .attributeList {
+  width: 46%;
+}
+@media (max-width: 500px) {
+  .middleContent .attributeList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.middleContent .attributeList h2 {
+  color: #FFA71A;
+  font-size: 2.6rem;
+}
+.middleContent .attributeList p {
+  border: 1px solid #FFA71A;
+  margin-right: 2px;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .middleContent .attributeList p {
+    width: 98%;
+  }
+}
+.workHistory {
+  padding: 1rem 0 2rem 0;
+  padding-bottom: 0rem;
+}
+.workHistory h2 {
+  color: #F7F6F3;
+  font-size: 2.6rem;
+  padding-left: 0.5rem;
+}
+.workHistory table {
+  width: 100%;
+  text-align: center;
+}
+.workHistory table th {
+  color: #FFA71A;
+  font-size: 2.2rem;
+  padding: 1.5rem;
+}
+.workHistory table td {
+  padding: 1rem;
+  border-top: 1px solid #FFA71A;
+}
+.workHistory table tr:last-child {
+  border-bottom: 1px solid #FFA71A;
+}
+footer {
+  padding-top: 3.5rem;
+  background: #302743;
+  color: #FFA71A;
+  text-align: center;
+}
+footer h2 {
+  padding: 1rem 0;
+  font-size: 2.6rem;
+}
+footer h6 {
+  padding: 3rem 0 1rem 0;
+  color: #A14152;
+}
